@@ -132,26 +132,25 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
         tacoRecipe.setNote(note);
 
-
-        tacoRecipe.getIngredients().add(new Ingredient("ancho chili powder",new BigDecimal(2), tableSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("dried oregano",new BigDecimal(1),teaSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("dried cumin",new BigDecimal(1),teaSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("sugar",new BigDecimal(1),teaSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("salt",new BigDecimal(1/2),teaSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("finely chopped garlic clove",new BigDecimal(1),dashUom));
-        tacoRecipe.getIngredients().add(new Ingredient("finely grated orange zest",new BigDecimal(1),tableSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("fresh squeezed orange juice",new BigDecimal(3),tableSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("olive oil",new BigDecimal(2),tableSpoonUom));
-        tacoRecipe.getIngredients().add(new Ingredient("chicken thighs",new BigDecimal(5),dashUom));
-        tacoRecipe.getIngredients().add(new Ingredient("corn tortillas",new BigDecimal(8),dashUom));
-        tacoRecipe.getIngredients().add(new Ingredient("baby arugula",new BigDecimal(3),eachUom));
-        tacoRecipe.getIngredients().add(new Ingredient("sliced ripe avocados",new BigDecimal(2),dashUom));
-        tacoRecipe.getIngredients().add(new Ingredient("thinly sliced radishes",new BigDecimal(4),dashUom));
-        tacoRecipe.getIngredients().add(new Ingredient("halved cherry tomatoes",new BigDecimal(0.5),pintUom));
-        tacoRecipe.getIngredients().add(new Ingredient("thinly sliced red onions",new BigDecimal(0.25),dashUom));
-        tacoRecipe.getIngredients().add(new Ingredient("roughly chopped cilantro",new BigDecimal(1),pintUom));
-        tacoRecipe.getIngredients().add(new Ingredient("sour cream",new BigDecimal(0.5),eachUom));
-        tacoRecipe.getIngredients().add(new Ingredient("wedges cut lime",new BigDecimal(1),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("ancho chili powder",new BigDecimal(2), tableSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("dried oregano",new BigDecimal(1),teaSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("dried cumin",new BigDecimal(1),teaSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("sugar",new BigDecimal(1),teaSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("salt",new BigDecimal(1/2),teaSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("finely chopped garlic clove",new BigDecimal(1),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("finely grated orange zest",new BigDecimal(1),tableSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("fresh squeezed orange juice",new BigDecimal(3),tableSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("olive oil",new BigDecimal(2),tableSpoonUom));
+        tacoRecipe.addIngredient(new Ingredient("chicken thighs",new BigDecimal(5),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("corn tortillas",new BigDecimal(8),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("baby arugula",new BigDecimal(3),eachUom));
+        tacoRecipe.addIngredient(new Ingredient("sliced ripe avocados",new BigDecimal(2),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("thinly sliced radishes",new BigDecimal(4),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("halved cherry tomatoes",new BigDecimal(0.5),pintUom));
+        tacoRecipe.addIngredient(new Ingredient("thinly sliced red onions",new BigDecimal(0.25),dashUom));
+        tacoRecipe.addIngredient(new Ingredient("roughly chopped cilantro",new BigDecimal(1),pintUom));
+        tacoRecipe.addIngredient(new Ingredient("sour cream",new BigDecimal(0.5),eachUom));
+        tacoRecipe.addIngredient(new Ingredient("wedges cut lime",new BigDecimal(1),dashUom));
 
         tacoRecipe.getCategories().add(americanCategory);
         tacoRecipe.getCategories().add(mexicanCategory);

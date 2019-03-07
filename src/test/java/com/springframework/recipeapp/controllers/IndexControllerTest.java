@@ -1,14 +1,13 @@
 package com.springframework.recipeapp.controllers;
 
-import com.springframework.recipeapp.controllers.model.Recipe;
-import com.springframework.recipeapp.controllers.services.RecipeService;
+import com.springframework.recipeapp.model.Recipe;
+import com.springframework.recipeapp.RecipeService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.ui.Model;
 

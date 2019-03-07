@@ -1,10 +1,11 @@
-package com.springframework.recipeapp.controllers.services;
+package com.springframework.recipeapp.services;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-import com.springframework.recipeapp.controllers.model.Recipe;
-import com.springframework.recipeapp.controllers.repositories.RecipeRepository;
+import com.springframework.recipeapp.RecipeService;
+import com.springframework.recipeapp.model.Recipe;
+import com.springframework.recipeapp.repositories.RecipeRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

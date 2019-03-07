@@ -1,6 +1,6 @@
 package com.springframework.recipeapp.controllers;
 
-import com.springframework.recipeapp.controllers.services.RecipeService;
+import com.springframework.recipeapp.RecipeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,9 +1,9 @@
-package com.springframework.recipeapp.controllers.model;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.springframework.recipeapp.model;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CategoryTest {

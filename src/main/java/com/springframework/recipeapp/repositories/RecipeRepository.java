@@ -1,6 +1,6 @@
-package com.springframework.recipeapp.controllers.repositories;
+package com.springframework.recipeapp.repositories;
 
-import com.springframework.recipeapp.controllers.model.Recipe;
+import com.springframework.recipeapp.model.Recipe;
 import org.springframework.data.repository.CrudRepository;
 
 public interface RecipeRepository extends CrudRepository<Recipe, Long> {

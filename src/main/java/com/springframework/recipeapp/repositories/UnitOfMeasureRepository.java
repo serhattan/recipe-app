@@ -1,6 +1,6 @@
-package com.springframework.recipeapp.controllers.repositories;
+package com.springframework.recipeapp.repositories;
 
-import com.springframework.recipeapp.controllers.model.UnitOfMeasure;
+import com.springframework.recipeapp.model.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.springframework.recipeapp.controllers.model;
+package com.springframework.recipeapp.model;
 
 import lombok.Data;
 

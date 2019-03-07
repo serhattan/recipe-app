@@ -1,6 +1,6 @@
-package com.springframework.recipeapp.controllers.repositories;
+package com.springframework.recipeapp.repositories;
 
-import com.springframework.recipeapp.controllers.model.UnitOfMeasure;
+import com.springframework.recipeapp.model.UnitOfMeasure;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

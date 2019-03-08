@@ -12,8 +12,8 @@ public class IngredientToIngredientCommand implements Converter<Ingredient, Ingr
 
     private final UnitOfMeasureToUnitOfMeasureCommand uomConverter;
 
-    public IngredientToIngredientCommand(UnitOfMeasureToUnitOfMeasureCommand uomConverter) {
-        this.uomConverter = uomConverter;
+    public IngredientToIngredientCommand(UnitOfMeasureToUnitOfMeasureCommand unitOfMeasureToUnitOfMeasureCommand) {
+        this.uomConverter = unitOfMeasureToUnitOfMeasureCommand;
     }
 
     @Synchronized

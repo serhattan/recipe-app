@@ -1,6 +1,6 @@
 package com.springframework.recipeapp.controllers;
 
-import com.springframework.recipeapp.RecipeService;
+import com.springframework.recipeapp.services.RecipeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,7 +1,7 @@
 package com.springframework.recipeapp.controllers;
 
 import com.springframework.recipeapp.model.Recipe;
-import com.springframework.recipeapp.RecipeService;
+import com.springframework.recipeapp.services.RecipeService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

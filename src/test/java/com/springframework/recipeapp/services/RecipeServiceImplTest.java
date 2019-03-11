@@ -3,7 +3,6 @@ package com.springframework.recipeapp.services;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-import com.springframework.recipeapp.RecipeService;
 import com.springframework.recipeapp.converters.RecipeCommandToRecipe;
 import com.springframework.recipeapp.converters.RecipeToRecipeCommand;
 import com.springframework.recipeapp.model.Recipe;

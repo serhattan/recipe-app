@@ -1,6 +1,7 @@
 package com.springframework.recipeapp.services;
 
 import com.springframework.recipeapp.commands.IngredientCommand;
+import com.springframework.recipeapp.commands.RecipeCommand;
 import com.springframework.recipeapp.converters.IngredientCommandToIngredient;
 import com.springframework.recipeapp.converters.IngredientToIngredientCommand;
 import com.springframework.recipeapp.model.Ingredient;
@@ -103,6 +104,31 @@ public class IngredientServiceImpl implements IngredientService {
             }
 
             return ingredientToIngredientCommand.convert(savedIngredientOptional.get());
+        }
+    }
+
+    @Override
+    public void deleteById(Long recipeId, Long ingrediendId) {
+        Optional<Recipe> recipeOptional = recipeRepository.findById(recipeId);
+
+        if (recipeOptional.isPresent()) {
+            Recipe recipe = recipeOptional.get();
+
+            Optional<Ingredient> ingredientOptional = recipe
+                    .getIngredients()
+                    .stream()
+                    .filter(ingredient -> ingredient.getId().equals(ingrediendId))
+                    .findFirst();
+
+
+            if (ingredientOptional.isPresent()) {
+                Ingredient ingredientToDelete = ingredientOptional.get();
+                ingredientToDelete.setRecipe(null);
+                recipe.getIngredients().remove(ingredientOptional.get());
+                recipeRepository.save(recipe);
+            }
+        } else {
+            log.error("Recipe Not Found. Id: " + recipeId);
         }
     }
 }

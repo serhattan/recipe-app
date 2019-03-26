@@ -5,6 +5,7 @@ import static org.mockito.Mockito.*;
 
 import com.springframework.recipeapp.converters.RecipeCommandToRecipe;
 import com.springframework.recipeapp.converters.RecipeToRecipeCommand;
+import com.springframework.recipeapp.exceptions.NotFoundException;
 import com.springframework.recipeapp.model.Recipe;
 import com.springframework.recipeapp.repositories.RecipeRepository;
 import org.junit.Before;
@@ -49,6 +50,15 @@ public class RecipeServiceImplTest {
         assertNotNull(recipeReturned);
         verify(recipeRepository, times(1)).findById(any());
         verify(recipeRepository, never()).findAll();
+    }
+
+    @Test(expected = NotFoundException.class)
+    public void getRecipeByIdTestNotFound() throws Exception {
+        Optional<Recipe> recipeOptional = Optional.empty();
+
+        when(recipeRepository.findById(anyLong())).thenReturn(recipeOptional);
+
+        Recipe recipeReturned = recipeService.findById(1L);
     }
 
     @Test
